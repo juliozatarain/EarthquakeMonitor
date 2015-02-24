@@ -10,7 +10,13 @@
 #import <MapKit/MapKit.h>
 #import "Earthquake.h"
 #import "RequestHelper.h"
+#import "CustomTextView.h"
 @interface EarthquakeDetailVC : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet CustomTextView *textView;
+@property Earthquake *earthquake;
+@property RequestHelper *requestor;
+@property NSURLSessionTask *eTask;
+@property MKPointAnnotation *point;
+@property NSDateFormatter *eDateFormatter;
 @end

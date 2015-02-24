@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F414DAED1A9C3284007DAD1D /* RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F414DAEC1A9C3284007DAD1D /* RequestHelper.m */; };
-		F414DAF11A9C3AE7007DAD1D /* EarthquakeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F414DAF01A9C3AE7007DAD1D /* EarthquakeFetcher.m */; };
 		F414DAF71A9C622E007DAD1D /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = F414DAF61A9C622E007DAD1D /* Earthquake.m */; };
 		F414DAFA1A9C8663007DAD1D /* EarthquakeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F414DAF91A9C8663007DAD1D /* EarthquakeDetailVC.m */; };
+		F414DAFC1A9CDF45007DAD1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F414DAFB1A9CDF45007DAD1D /* MapKit.framework */; };
+		F414DAFF1A9D0230007DAD1D /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F414DAFE1A9D0230007DAD1D /* CustomTextView.m */; };
 		F4B463C71A9BB3A400C173A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B463C61A9BB3A400C173A0 /* main.m */; };
 		F4B463CA1A9BB3A400C173A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B463C91A9BB3A400C173A0 /* AppDelegate.m */; };
 		F4B463CD1A9BB3A500C173A0 /* EarthquakeMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B463CB1A9BB3A500C173A0 /* EarthquakeMonitor.xcdatamodeld */; };
@@ -51,12 +52,13 @@
 /* Begin PBXFileReference section */
 		F414DAEC1A9C3284007DAD1D /* RequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelper.m; sourceTree = "<group>"; };
 		F414DAEE1A9C334D007DAD1D /* baseURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseURL.h; sourceTree = "<group>"; };
-		F414DAEF1A9C3AE7007DAD1D /* EarthquakeFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeFetcher.h; sourceTree = "<group>"; };
-		F414DAF01A9C3AE7007DAD1D /* EarthquakeFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeFetcher.m; sourceTree = "<group>"; };
 		F414DAF51A9C622E007DAD1D /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earthquake.h; sourceTree = "<group>"; };
 		F414DAF61A9C622E007DAD1D /* Earthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Earthquake.m; sourceTree = "<group>"; };
 		F414DAF81A9C8663007DAD1D /* EarthquakeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeDetailVC.h; sourceTree = "<group>"; };
 		F414DAF91A9C8663007DAD1D /* EarthquakeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeDetailVC.m; sourceTree = "<group>"; };
+		F414DAFB1A9CDF45007DAD1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F414DAFD1A9D0230007DAD1D /* CustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
+		F414DAFE1A9D0230007DAD1D /* CustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
 		F4B463C11A9BB3A400C173A0 /* EarthquakeMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B463C51A9BB3A400C173A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B463C61A9BB3A400C173A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F414DAFC1A9CDF45007DAD1D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +134,7 @@
 		F4B463B81A9BB3A400C173A0 = {
 			isa = PBXGroup;
 			children = (
+				F414DAFB1A9CDF45007DAD1D /* MapKit.framework */,
 				F4B463C31A9BB3A400C173A0 /* EarthquakeMonitor */,
 				F4B463E01A9BB3A500C173A0 /* EarthquakeMonitorTests */,
 				F4B463C21A9BB3A400C173A0 /* Products */,
@@ -162,12 +166,12 @@
 				F4B463D61A9BB3A500C173A0 /* LaunchScreen.xib */,
 				F4B463CB1A9BB3A500C173A0 /* EarthquakeMonitor.xcdatamodeld */,
 				F4B463C41A9BB3A400C173A0 /* Supporting Files */,
-				F414DAEF1A9C3AE7007DAD1D /* EarthquakeFetcher.h */,
-				F414DAF01A9C3AE7007DAD1D /* EarthquakeFetcher.m */,
 				F414DAF51A9C622E007DAD1D /* Earthquake.h */,
 				F414DAF61A9C622E007DAD1D /* Earthquake.m */,
 				F414DAF81A9C8663007DAD1D /* EarthquakeDetailVC.h */,
 				F414DAF91A9C8663007DAD1D /* EarthquakeDetailVC.m */,
+				F414DAFD1A9D0230007DAD1D /* CustomTextView.h */,
+				F414DAFE1A9D0230007DAD1D /* CustomTextView.m */,
 			);
 			path = EarthquakeMonitor;
 			sourceTree = "<group>";
@@ -359,7 +363,6 @@
 				F4B464031A9BB47400C173A0 /* AFHTTPRequestOperationManager.m in Sources */,
 				F4B464071A9BB47400C173A0 /* AFURLConnectionOperation.m in Sources */,
 				F4B464211A9BB49100C173A0 /* UIImageView+AFNetworking.m in Sources */,
-				F414DAF11A9C3AE7007DAD1D /* EarthquakeFetcher.m in Sources */,
 				F4B464021A9BB47400C173A0 /* AFHTTPRequestOperation.m in Sources */,
 				F4B4641E1A9BB49100C173A0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F4B463D01A9BB3A500C173A0 /* EarthquakeTVC.m in Sources */,
@@ -370,6 +373,7 @@
 				F4B464051A9BB47400C173A0 /* AFNetworkReachabilityManager.m in Sources */,
 				F4B464091A9BB47400C173A0 /* AFURLResponseSerialization.m in Sources */,
 				F4B464241A9BB49100C173A0 /* UIWebView+AFNetworking.m in Sources */,
+				F414DAFF1A9D0230007DAD1D /* CustomTextView.m in Sources */,
 				F4B4640A1A9BB47400C173A0 /* AFURLSessionManager.m in Sources */,
 				F4B4641D1A9BB49100C173A0 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F4B463CD1A9BB3A500C173A0 /* EarthquakeMonitor.xcdatamodeld in Sources */,

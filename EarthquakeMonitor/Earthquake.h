@@ -14,13 +14,12 @@
 // magnitude
 @property NSNumber *eMagnitude;
 // geocoordinates
-@property NSNumber *eLatitude;
-@property NSNumber *eLongitude;
-
-@property NSNumber *date;
-
+@property float eLatitude;
+@property float eLongitude;
+@property float depth;
+@property long long int eDate;
 @property NSString *eId;
 
 -(id)initWithDict:(NSDictionary*)earthquakeDic andWithId:(NSString*)eId;
-
+-(void) setDetailInfoWithDict:(NSDictionary*)dataDict;
 @end

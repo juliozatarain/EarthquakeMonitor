@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Earthquake.h"
+#import "EarthquakeDetailVC.h"
 
 @interface EarthquakeTVC : UITableViewController<UITableViewDelegate,UITableViewDataSource>
-
-// So we can have control of the task and terminate it when needed
-@property NSURLSessionDataTask *requestTask;
 
 // data source for the tableview
 @property NSMutableArray *earthquakeData;
@@ -26,8 +24,8 @@
 //title item
 @property (weak, nonatomic) IBOutlet UINavigationItem *titleItem;
 
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 // action for refresh button
 - (IBAction)refreshButtonAction:(id)sender;
-
 @end
 
