@@ -3,7 +3,7 @@
 //  EarthquakeMonitor
 //
 //  Created by Julio Zatarain on 23/02/15.
-//  Copyright (c) 2015 kamikaze. All rights reserved.
+//  Copyright (c) 2015 juliozatarain. All rights reserved.
 //
 
 #import "EarthquakeTVC.h"
@@ -111,6 +111,7 @@
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // we prove the destination view controller with the earthquake object
     if ([segue.identifier isEqualToString:@"detailSegue"])
         [(EarthquakeDetailVC*)[segue destinationViewController] setEarthquake:[[self earthquakeData] objectAtIndex:[(NSIndexPath *)sender row]]];
 }

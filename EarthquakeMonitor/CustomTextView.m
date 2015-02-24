@@ -3,7 +3,7 @@
 //  EarthquakeMonitor
 //
 //  Created by Julio Zatarain on 24/02/15.
-//  Copyright (c) 2015 kamikaze. All rights reserved.
+//  Copyright (c) 2015 juliozatarain. All rights reserved.
 //
 
 #import "CustomTextView.h"
@@ -35,7 +35,7 @@
         UITextView *tv = object;
         CGFloat deadSpace = ([tv bounds].size.height - [tv contentSize].height);
         CGFloat inset = MAX(0, deadSpace/2.0);
-        tv.contentInset = UIEdgeInsetsMake(inset , tv.contentInset.left, inset, tv.contentInset.right);
+        tv.contentInset = UIEdgeInsetsMake(inset , tv.contentInset.left + 1000.0f, inset, tv.contentInset.right);
     }
 }
 

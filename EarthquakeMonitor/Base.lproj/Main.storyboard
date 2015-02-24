@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="v7U-q8-pzt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Summary-->
@@ -70,13 +71,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-Hu-o9C" customClass="CustomTextView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="235"/>
+                                <rect key="frame" x="20" y="64" width="580" height="235"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="scrollIndicatorInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="scrollIndicatorInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jqp-7y-PyD">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jqp-7y-PyD">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="RIy-XW-ZNV"/>
@@ -85,13 +86,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FBj-Hu-o9C" firstAttribute="top" secondItem="dGW-Yn-5Sc" secondAttribute="bottom" id="61c-CL-3ut"/>
-                            <constraint firstItem="L0Y-3f-7D9" firstAttribute="top" secondItem="Jqp-7y-PyD" secondAttribute="bottom" id="Frh-hz-4hd"/>
-                            <constraint firstItem="Jqp-7y-PyD" firstAttribute="top" secondItem="FBj-Hu-o9C" secondAttribute="bottom" constant="1" id="Vj7-7k-6XC"/>
-                            <constraint firstItem="Jqp-7y-PyD" firstAttribute="leading" secondItem="nhD-i6-e2u" secondAttribute="leading" id="hAC-ZB-O4l"/>
-                            <constraint firstItem="Jqp-7y-PyD" firstAttribute="leading" secondItem="FBj-Hu-o9C" secondAttribute="leading" id="pX0-X7-Pbl"/>
-                            <constraint firstAttribute="trailing" secondItem="Jqp-7y-PyD" secondAttribute="trailing" id="pZs-6s-0Ea"/>
-                            <constraint firstItem="Jqp-7y-PyD" firstAttribute="trailing" secondItem="FBj-Hu-o9C" secondAttribute="trailing" id="z6r-UY-kKF"/>
+                            <constraint firstItem="Jqp-7y-PyD" firstAttribute="top" secondItem="FBj-Hu-o9C" secondAttribute="bottom" constant="1" id="9br-AJ-IRV"/>
+                            <constraint firstItem="FBj-Hu-o9C" firstAttribute="leading" secondItem="nhD-i6-e2u" secondAttribute="leadingMargin" constant="4" id="H7s-Og-ieD"/>
+                            <constraint firstItem="L0Y-3f-7D9" firstAttribute="top" secondItem="Jqp-7y-PyD" secondAttribute="bottom" id="HTe-cM-i6Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FBj-Hu-o9C" secondAttribute="trailing" constant="-16" id="jCc-zU-iG3"/>
+                            <constraint firstItem="FBj-Hu-o9C" firstAttribute="top" secondItem="dGW-Yn-5Sc" secondAttribute="bottom" id="ny9-jq-29w"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

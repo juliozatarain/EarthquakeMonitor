@@ -3,7 +3,7 @@
 //  EarthquakeMonitor
 //
 //  Created by Julio Zatarain on 23/02/15.
-//  Copyright (c) 2015 kamikaze. All rights reserved.
+//  Copyright (c) 2015 juliozatarain. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -53,7 +53,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "kamikaze.EarthquakeMonitor" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "juliozatarain.EarthquakeMonitor" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
